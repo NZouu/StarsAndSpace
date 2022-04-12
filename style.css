@@ -1,0 +1,248 @@
+
+/* nav start ================================ */
+
+.navbar-custom {
+  background-color: #372545;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #b28ece;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  font-family: "spacefont", Fallback, sans-serif;
+  font-size: 20px;
+  color: #b28ece;
+}
+/* change the color of hovered links */
+.navbar-custom .navbar-nav .nav-item:hover .nav-link {
+  color: #ffffff;
+}
+/*dropdown*/
+.container .dropdown .dropdown-menu {
+    color: #fff;
+    background-color: #b28ece;
+    border-color: #fff;
+  }
+
+  .container .dropdown .dropdown-menu .dropdown-item {
+    font-family: 'spacefont', Fallback, sans-serif;
+    font-size: 20px;
+  }
+
+.container .dropdown .dropdown-menu a:hover {
+  color: #fff;
+  background-color: #b28ece;
+  border-color: #fff;
+}
+
+/* ====================================== nav end */
+
+
+/*=========================================font information*/
+
+@font-face {
+  font-family: "spacefont"; /*this will be the subtext font */
+  src: url(/fonts/Atures500PersonalUseOnly-GD6D.eot); /* IE9 Compat Modes */
+  src: url("fonts/Atures500PersonalUseOnly-GD6D.woff") format("woff") /* IE6-IE8 */  ,
+    /* Modern Browsers */ url("fonts/Atures500PersonalUseOnly-GD6D.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("fonts/Atures500PersonalUseOnly-GD6D.svg")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "galaxyfont"; /*this will be header font*/
+  src: url(/fonts/Galacticagrid-8Mr7J.eot); /* IE9 Compat Modes */
+  src: url("fonts/Galacticagrid-8Mr7J.woff") format("woff") /* IE6-IE8 */  ,
+    /* Modern Browsers */ url("fonts/Galacticagrid-8Mr7J.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("fonts/Galacticagrid-8Mr7J.svg")
+      format("svg"); /* Legacy iOS */
+}
+
+/* =========================================== font end */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto 0;
+}
+
+body{
+    margin: 0;
+    text-align:center;
+}
+
+h1 {
+    font-family: "galaxyfont", Fallback, sans-serif;
+    color: #ffffff;
+    padding: 5px 5px;
+}
+
+p {
+  font-family: "spacefont", Fallback, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 5px 5px;
+}
+
+/* index.html ======================================= */
+
+ /* hero section */ 
+.title {
+    background-image: url(img/spacebg.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: #161D2F;
+    background-size: cover;
+    padding: 15em 0;
+}
+
+.title .container img {
+    display:inline block;
+    padding: 3em;
+}
+
+#name {
+  font-size: 70px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+#introduction {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+/* =========== hero end*/
+
+
+.gamecards{
+    background-color: #161D2F;
+    padding: 7em 0;
+}
+
+footer {
+  display:flex;
+  background-color: #372545;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position:fixed; 
+}
+
+
+
+
+
+/*ASTRO JUMP starts here ===========================================*/
+
+.astrojump {
+  background-image: url(img/astroJumpBG.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color: #161D2F;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 500px;
+}
+
+.astrojump h1 {
+  font-size: 60px;
+}
+
+.astrojump p {
+  font-size: 30px;
+}
+
+#gameA{
+  display: inline-block;
+  width: 1000px;
+  height: 400px;
+  
+}
+
+#characterA{
+  background-image: url(img/astronaut.png);
+  width: 80px;
+  height: 100px;
+  position: relative;
+  top: 300px;
+}
+
+.animateA{
+  animation: jump 500ms;
+}
+
+@keyframes jump{
+  0%{top: 300px;}
+  30%{top: 200px;}
+  70%{top: 200px;}
+  100%{top: 300px;}
+}
+
+#blockA{
+  background-image: url(img/alien.png);
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 260px;
+  left: 960px;
+  animation: blockA 1.5s infinite linear;
+}
+
+@keyframes blockA{
+  0%{left: 960px;}
+  100%{left: -80px;}
+}
+
+/*MARTIAN starts here ===========================================*/
+
+#characterM{
+  background-image: url(img/martian.png);
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top: 500px;
+}
+
+#gameM {
+  background-color:#372545 ;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#blockM {
+  background-image: url(img/obstacle.png);
+  width: 50px;
+  height: 500px;
+  position: relative;
+  left: 400px;
+  animation: blockM 2s infinite linear;
+}
+
+@keyframes blockM {
+  0%{left:400px;}
+  100%{left:-50px;}
+}
+
+#holeM{
+  width: 50px;
+  height: 150px;
+  position: relative;
+  background-color:#372545;
+  left: 400px;
+  animation: blockM 2s infinite linear;
+}
+

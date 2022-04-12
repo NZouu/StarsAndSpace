@@ -1,0 +1,105 @@
+<!-- help from tutorial here: https://www.youtube.com/watch?v=bG2BmmYr9NQ&t=12s&ab_channel=KnifeCircus -->
+
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>Astro Jump</title>
+    <link rel="icon" href="img/SSLogoSmall.png" />
+  </head>
+  <header>
+    <!--nav bar-->
+    <nav
+      class="navbar navbar-custom navbar-expand-lg navbar-dark"
+      aria-label="Eighth navbar example"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/SSLogoSmall.png" alt="Star sand Space" width="50px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample07"
+          aria-controls="navbarsExample07"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="astrojumpstart.html">Astro Jump</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="MartianMovesStart.html">Martian Moves</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown07"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Other</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                <li><a class="dropdown-item" href="#">Citations</a></li>
+                <li><a class="dropdown-item" href="#">Information</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--game starts here-->
+      
+    <body>
+        <section class="astrojump">
+            <h1>ASTRO JUMP</h1>
+            <p>click to jump</p>
+            <div id="gameA">
+                <div id="characterA"></div>
+                <div id="blockA"></div>
+            </div>
+        </section>
+    </body>
+    <script src="astrojumpscript.js"></script>
+
+    <!--game ends here-->
+
+    <footer>
+      <br />
+    </footer>
+
+    </section>
+  </body>
+</html>
